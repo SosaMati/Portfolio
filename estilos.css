@@ -1,0 +1,300 @@
+*{
+    margin:0;
+
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#navbar{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 5em;
+    top:0;
+    left:0;
+    z-index:1;
+     
+}
+
+#navbar ul{
+    display: flex;
+    flex-direction: row;  
+    justify-content: flex-end;
+    margin-top: 1em;
+    margin-right: 5em;
+    font-size: 1.5em;
+}
+
+#navbar li{
+    padding-right: 2em;
+    list-style:none;
+}
+
+
+#navbar a{
+    text-decoration:none;
+    color:aliceblue
+}
+
+#navbar a:hover{
+    color:darkgrey;
+}
+
+#horizontal{
+    min-width: 100%;  
+    min-height: 100%;
+
+}
+
+
+#welcome-section{
+    background-color: black;
+    width: 100%;
+    height:50vw;
+    font-size: 2.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+      
+}  
+
+#welcome-section  h1 {
+    position: absolute;
+    color:aliceblue;
+    margin-bottom: 2.5em;
+}
+
+#welcome-section  p {
+    position: absolute;
+    color: aliceblue;
+}
+
+#welcome-section i{
+    position:absolute;
+    color:aliceblue;
+    font-size:2em;
+    margin-top: -1.5em;
+    z-index: 1;
+
+    
+}
+
+#welcome-section i:hover{
+    transform: scale(1.4);
+    transition-duration: .5s;
+}
+
+#titulo{
+    text-align: center;
+    margin: 5em;
+}
+
+
+
+#projects{
+    width: 80%;
+    margin: 5em auto;
+    border: 1px solid rgb(201, 201, 201); 
+    border-radius:1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 1px 1px 5px rgb(168, 168, 168);
+    background-color:whitesmoke;
+}
+
+.project-tile img{
+    width: 21em;
+    margin:2em;
+    border: 1px solid rgb(201, 201, 201);
+    box-shadow: 1px 1px 5px black;
+}
+
+.project-tile img:hover{
+    transform: scale(1.04);
+    transition-duration: .5s;
+
+}
+
+
+#contactos{
+    background-color:black;
+    color:aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    padding-top: 2em;;
+}
+
+
+#contactos-links{
+    margin: 3.5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#contactos-links a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 1vw;
+    display: flex;
+    flex-direction: row;
+
+    
+    
+}
+
+#contactos-links a:hover{
+    color:darkblue;
+    
+}
+
+
+@media (max-width: 1000px){
+    #navbar ul{
+        margin-right: 0;
+        font-size: 1.3em;
+    }
+    
+    #welcome-section{
+        font-size: 2em;
+        
+    }
+
+    #welcome-section p{
+        padding-top: 5rem;
+    }
+
+    #titulo{
+        margin-top: 5em;
+    }
+
+    #projects{
+        width: 85%;
+    }
+
+    .project-tile img{
+        width: 30em;
+        margin:2em;
+        
+    }
+    #contactos{
+        font-size: 2em;
+        padding-top:1em;
+    }
+
+    #contactos-links{
+        margin:3em 1em;
+    }
+
+}
+
+@media (max-width:600px){
+   
+    
+   
+    #navbar{
+        height: 4.5em;
+
+    }
+
+    #navbar ul{
+        margin-top:0;
+        padding-top: 1.5em;
+        justify-content: center;    
+        font-size:6vw;
+    }
+
+    #navbar li{
+        padding-right: 1em;
+    }
+    
+    #horizontal{
+        display:none;
+    }
+
+
+
+    #welcome-section{
+
+        background:url(fondovideovertical.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        font-size: 5vw; 
+        height: 200vw;
+        
+        
+        
+    } 
+
+    #welcome-section  h1 {
+        margin-bottom: 0em;
+    }
+
+    #welcome-section p{
+        margin-top:3em;
+    }
+
+    #welcome-section i{
+        margin-top: 5em;
+    }
+   
+
+    #titulo{
+        margin-top:0;
+        font-size:0.7em;
+    }
+
+    #projects{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        border: none;
+        box-shadow: none;
+        background-color: white;
+        margin-top: 0;
+    }
+
+    .project-tile img{
+        width: 90%;
+        margin:1em;
+    }
+
+    #contactos{
+        width: 100%;
+        height: 100vw;
+        margin:0;
+    }
+    #contactos h2{
+        font-size:10vw;
+
+    }
+
+    #contactos-links{
+        padding-top:1em ;
+        margin: 0;
+        font-size:1.4em;
+    }
+
+    #contactos-links a{
+        padding:0.4em;
+        
+    }
+
+    #contactos-links p{
+        display:none;
+    }
+}
+    
+
+
